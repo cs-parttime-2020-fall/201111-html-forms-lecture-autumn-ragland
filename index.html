@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>20 11 11 HTML Forms Lecture</h1>
+    <form action="https://postman-echo.com/get" method="GET">
+        <fieldset>
+            <legend>Lecture</legend>
+            <!-- name field -->
+            <div>
+                <label for="studentName">Name : </label>
+                <input type="text" name="name" id="studentName" placeholder = "First and Last Name">
+            </div>
+            <!-- age field -->
+            <div>
+                <label for="studentAge">Age : </label>
+                <input type="number" id = "studentAge" name = "age" required>
+            </div>
+            <!-- email field -->
+            <div>
+                <label for="studentEmail">Email Address : </label>
+                <input type="email" id = "studentEmail" name = "email" required>
+            </div>
+            <!-- date field -->
+            <div>
+                <label for="studentBirthday">Date of Birth : </label>
+                <input type="date" name="dob" id="studentBirthday">
+            </div>
+            <!-- cohort selection -->
+            <div>
+                <label for="studentCohort">Cohort</label>
+                <select name="cohort" id="studentCohort">
+                    <option value="0">---</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five</option>
+                </select>
+            </div>
+            <!-- location radio buttons -->
+            <div>
+                <p>Is the student from the memphis area?</p>
+
+                <input type="radio" name="location" id="localStudent" value = "local">
+                <label for="localStudent">Local</label>
+
+                <input type="radio" name="location" id="nonlocalStudent" value = "nonLocal">
+                <label for="nonlocalStudent">Not Local</label>
+            </div>
+            <!-- student experience checkboxes -->
+            <div>
+                <p>Check all that apply : </p>
+
+                <div>
+                    <label for="studentInterst">Interest in Programming </label>
+                    <input type="checkbox" name="interest" id="studentInterst">
+                </div>
+
+                <div>
+                    <label for="studentExperience">Experience in Programming </label>
+                    <input type="checkbox" name="experience" id="studentExperience">
+                </div>
+
+                <div>
+                    <label for="studentEducation">Education in Programming </label>
+                    <input type="checkbox" name="education" id="studentEducation">
+                </div>
+            </div>
+            <div>
+                <!-- <input type="submit" value="Submit Form"> -->
+                <button type="submit">Submit Form</button>
+                <button type="reset">Reset Form</button>
+            </div>
+        </fieldset>
+    </form>
+
+</body>
+</html>
